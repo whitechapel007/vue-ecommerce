@@ -13,4 +13,14 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  build: {
+    // Optimize build for Netlify
+    target: "es2015",
+    outDir: "dist",
+    assetsDir: "assets",
+    // Avoid the Rollup native module issue
+    rollupOptions: {
+      external: ["@rollup/rollup-linux-x64-gnu"],
+    },
+  },
 });

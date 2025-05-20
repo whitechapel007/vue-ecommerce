@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "build:netlify": "echo 'Building for Netlify (Node.js:' && node --version && echo ')' && vite build",
+    "build:netlify": "vite build",
     "preview": "vite preview",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "postinstall": "npm rebuild"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
@@ -29,8 +30,9 @@
     "jest": "^29.7.0",
     "ts-jest": "^29.3.4",
     "typescript": "^5.8.3",
-    "vite": "^6.2.4",
+    "vite": "^4.5.2",
     "vite-plugin-vue-devtools": "^7.7.2",
-    "vue-tsc": "^1.8.19"
+    "vue-tsc": "^1.8.19",
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }
