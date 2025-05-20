@@ -9,8 +9,7 @@
     "build:netlify": "vite build",
     "preview": "vite preview",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "postinstall": "npm rebuild"
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",

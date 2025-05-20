@@ -18,9 +18,19 @@ export default defineConfig({
     target: "es2015",
     outDir: "dist",
     assetsDir: "assets",
+    // Memory optimization
+    minify: "esbuild",
+    sourcemap: false,
     // Avoid the Rollup native module issue
     rollupOptions: {
       external: ["@rollup/rollup-linux-x64-gnu"],
+      // Optimize chunks
+      output: {
+        manualChunks: {
+          vendor: ["vue", "vue-router", "pinia"],
+          ui: ["lucide-vue-next"],
+        },
+      },
     },
   },
 });
