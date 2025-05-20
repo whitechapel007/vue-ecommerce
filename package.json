@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:netlify": "vite build",
     "preview": "vite preview",
     "test": "jest",
     "test:coverage": "jest --coverage"

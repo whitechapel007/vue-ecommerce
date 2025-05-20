@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build:netlify"
+  publish = "dist"
+
+# Force Node.js 18 which is more stable with vue-tsc
+[build.environment]
+  NODE_VERSION = "18"
+
+# Use our custom build plugin
+[[plugins]]
+  package = "./netlify/plugins/pre-build"
+
+# Handle SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
