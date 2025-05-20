@@ -1,15 +1,16 @@
-# Vue E-Commerce Product Management System
+# Vue E-Commerce App
 
-A complete Vue.js 3 e-commerce product management system built with TypeScript, Pinia, Vue Router, and Tailwind CSS.
+This project is a demo e-commerce site built with Vue 3, TypeScript, Pinia, and Tailwind CSS.
 
 ## 🛠 Tech Stack
 
-- **Vue.js 3** (Composition API)
+- **Vue 3** (Composition API)
 - **TypeScript**
 - **Vite**
 - **Pinia** (for state management)
 - **Vue Router**
 - **Tailwind CSS**
+- **Lucide Icons**
 - **Jest** (for testing)
 
 ## 📦 Features
@@ -47,7 +48,6 @@ src/
 │   ├── layout/      # Layout components (header, footer)
 │   ├── product/     # Product-related components
 │   └── ui/          # UI components (buttons, inputs, etc.)
-├── composables/     # Reusable composition functions
 ├── mocks/           # Mock data
 ├── router/          # Vue Router configuration
 ├── stores/          # Pinia stores
@@ -69,8 +69,8 @@ src/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/vue-ecomm-app.git
-cd vue-ecomm-app
+git https://github.com/whitechapel007/vue-ecommerce.git
+cd vue-ecommerce
 ```
 
 2. Install dependencies
@@ -114,13 +114,6 @@ yarn test
 - No real API integration
 - No user authentication
 - No payment processing
-
-## 🌟 Bonus Features (To Be Implemented)
-
-- User authentication (login/signup)
-- Product reviews and star ratings
-- Wishlist functionality
-- Light/Dark theme toggle
 
 ## 📄 License
 
