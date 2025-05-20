@@ -6,10 +6,6 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Use our custom build plugin
-[[plugins]]
-  package = "./netlify/plugins/pre-build"
-
 # Handle SPA routing
 [[redirects]]
   from = "/*"

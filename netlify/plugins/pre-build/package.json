@@ -1,0 +1,8 @@
+{
+  "name": "netlify-pre-build-plugin",
+  "version": "1.0.0",
+  "description": "A simple pre-build plugin for Netlify",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT"
+}

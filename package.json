@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "build:netlify": "vite build",
+    "build:netlify": "echo 'Building for Netlify (Node.js:' && node --version && echo ')' && vite build",
     "preview": "vite preview",
     "test": "jest",
     "test:coverage": "jest --coverage"
